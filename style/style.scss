@@ -1,0 +1,96 @@
+@import './reset.scss';
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	min-width: 80vh;
+	font-family: 'Kantumruy Pro', sans-serif;
+	background: linear-gradient(70deg, blue, pink);
+}
+.container {
+	display: flex;
+	flex-direction: column;
+	width: 1000px;
+	height: 600px;
+	box-shadow: 0 0 10px #000;
+}
+
+.info {
+	text-align: center;
+	font-size: 60px;
+	.title {
+		margin-bottom: 10px;
+		font-size: 60px;
+	}
+	.subtitle {
+		margin-bottom: 10px;
+		font-size: 20px;
+	}
+}
+
+.ball-img {
+	position: relative;
+	height: 250px;
+	img {
+		position: absolute;
+		top: 30px;
+		left: 300px;
+		width: 300px;
+		cursor: pointer;
+	}
+}
+.question-area {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	h2 {
+		margin-bottom: 10px;
+		font-size: 30px;
+		text-transform: uppercase;
+	}
+	input {
+		padding: 10px 20px;
+		width: 80%;
+		font-size: 20px;
+		border: 2px solid #333;
+		border-radius: 8px;
+	}
+	.answer {
+		font-family: 'Sue Ellen Francisco', cursive;
+		margin-top: 30px;
+		span {
+			font-weight: bold;
+		}
+	}
+	.error {
+		font-weight: bold;
+		color: #3add8c;
+	}
+}
+
+.shake-animation {
+	animation: shake 1s 1;
+}
+
+@keyframes shake {
+	0% {
+		left: 290px;
+	}
+	20% {
+		left: 340px;
+	}
+	40% {
+		left: 290px;
+	}
+	60% {
+		left: 340px;
+	}
+	80% {
+		left: 290px;
+	}
+	100% {
+		left: 300px;
+	}
+}
