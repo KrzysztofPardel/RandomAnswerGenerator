@@ -45,21 +45,26 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	h2 {
+	.inputHeader {
 		margin-bottom: 10px;
 		font-size: 30px;
 		text-transform: uppercase;
 	}
-	input {
+	.questionInput {
 		padding: 10px 20px;
-		width: 80%;
+		width: 60%;
+		// font-family: 'Kantumruy Pro', sans-serif;
+		font-family: 'Arial', sans-serif;
+		font-weight: 100;
 		font-size: 20px;
 		border: 2px solid #333;
 		border-radius: 8px;
+		text-align: center;
 	}
 	.answer {
 		font-family: 'Sue Ellen Francisco', cursive;
 		margin-top: 30px;
+		font-size: 30px;
 		span {
 			font-weight: bold;
 		}
